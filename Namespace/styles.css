@@ -1,0 +1,221 @@
+html {
+    font-size: 18px;
+    background-color: black;
+    background: linear-gradient(339deg, #080808, #0a71de, #000000, #0a71de);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:31% 0%}
+    50%{background-position:70% 70%}
+    100%{background-position:31% 0%}
+}
+a, article, body, div, dd, dl, dt, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, table, tbody, td, tfoot, th, thead, tr, ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+/* skip navigation link */
+p.skipnavigation {
+    margin: 0;
+    margin-bottom: 3%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+p.skipnavigation a:focus {
+    color: black;
+    background-color: snow;
+    top: 2%;
+    left: auto;
+    right: 2%;
+    z-index: 2;
+}
+
+/* site navigation */
+nav.sitenavigation {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0059b3;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+nav.sitenavigation li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+nav.sitenavigation a:link, a {
+    display: block;
+    background-color: #0059b3;
+    border: none;
+    padding: 14px 16px;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    -webkit-transition-duration: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus, a:hover, a:focus {
+    background-color: #000033;
+    color: #b3b3b3;
+}
+nav.sitenavigation a img {
+    height: 25px;
+    padding: 0;
+    margin: 0;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0080ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,h2, h3{
+    margin: auto;
+    display: block;
+    width: 40%;
+    padding: 1em 0em 0em 0em;
+    color: white;
+    text-align: center;
+}
+
+article {
+    margin: 5% 0% 5% 10%;
+    float: left;
+    width: 35%;
+    padding: 1em;
+    background-color: #0080ff;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 24px;
+    border-radius: 10px;
+}
+aside {
+    margin: 5% 10% 5% 0%;
+    width: 35%;
+    float: right;
+    border-radius: 10px
+}
+#quiz {
+    margin: auto;
+    float: none;
+    background-color: transparent;
+    box-shadow: none;
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 2em 0em 0em 0em;
+    color: white;
+}
+
+form {
+    padding: 1em 0em 0em 0em;
+    margin: auto;
+    width: 50%;
+}
+fieldset {
+    border: 2px solid white;
+    color: white;
+}
+fieldset input[type=submit] {
+    display: block;
+    margin: auto;
+}
+input[type=submit] {
+    padding: 10px;
+    background-color: #0080ff;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+}
+label {
+    margin: 2em;
+    padding: 1em;
+}
+select {
+    padding: 5px;
+    margin: .5em;
+    width: 15%;
+    background-color: #0080ff;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+}
+.headerBar {
+    padding: 2px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 2px solid #000033;
+}
+.hidContent {
+    display: none;
+    border: 1px solid #000;
+    background-color: #000033;
+    padding: 1em;
+}
+#champs {
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#money  {
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 300px), print {
+    #basicNav {
+        display: block;
+        margin: 0 auto;
+    }
+    nav.sitenavigation {
+        display: none;
+    }
+}
+@media screen and (min-width: 650px), print {
+    #basicNav {
+        display: none;
+    }
+    nav.sitenavigation {
+        display: block;
+    }
+}
