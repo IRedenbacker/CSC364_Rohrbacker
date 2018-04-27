@@ -1,0 +1,16 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: #6fcb9f;
+  color: white;
+}
+tr {
+  padding: .1em;
+  border: 1px solid red;
+}
+td {
+  padding: .1em;
+  margin: 1em;
+  border: 1px solid red;
+}
